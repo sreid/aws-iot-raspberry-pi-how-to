@@ -64,7 +64,7 @@ Copy the `<your-cert>-certificate.pem.crt` and the `<your-cert>-private.pem.key`
 Also, grab the AWS CA certificate that's available from Symantec. This is for the MQTT client to verify it is connecting to a valid, Amazon controlled, server.
 
 ```
-curl https://www.symantec.com/content/en/us/enterprise/verisign/roots/VeriSign-Class%203-Public-Primary-Certification-Authority-G5.pem > ~/aws-iot/rootCA.pem
+curl https://www.symantec.com/content/en/us/enterprise/verisign/roots/VeriSign-Class%203-Public-Primary-Certification-Authority-G5.pem > certs/rootCA.pem
 ```
 
 ### Setup Test Script
