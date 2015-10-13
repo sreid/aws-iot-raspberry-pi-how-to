@@ -18,10 +18,8 @@ mythingstate = {
   }
 }
 
-// Record our IP address
-require('dns').lookup(require('os').hostname(), function (err, add, fam) {
-  mythingstate["state"]["reported"]["ip"] = add;
-})
+var networkInterfaces = require( 'os' ).networkInterfaces( );
+mythingstate["state"]["reported"]["ip"] = networkInterfaces['eth0'][0]['address'];
 
 thingShadows.on('connect', function() {
   console.log("Connected...");
