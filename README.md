@@ -71,7 +71,7 @@ curl https://www.symantec.com/content/en/us/enterprise/verisign/roots/VeriSign-C
 The pi.js script in this repository will report the Pi's local IP using the AWS IoT platform. You can grab a copy from this repository here:
 
 ```
-curl > pi.js
+curl https://raw.githubusercontent.com/sreid/aws-iot-raspberry-pi-how-to/master/pi.js > pi.js
 ```
 
 Edit the file and update the config block to match your setup:
