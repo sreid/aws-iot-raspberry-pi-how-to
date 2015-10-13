@@ -1,4 +1,4 @@
-# How to connect a Raspberry Pi to the AWS Iot Platform
+# How to connect a Raspberry Pi to the AWS IoT Platform
 by @sreid.
 
 ## Intro
