@@ -32,25 +32,18 @@ mkdir ~/aws-iot/certs
 
 ### Install the AWS SDK
 
-NOTE: At the moment, the official Node package has a syntax error. Try this alternative fork from Github until [this issue](https://github.com/aws/aws-iot-device-sdk-js/pull/2) is resolved.
-
 ```
-npm install https://github.com/gmdayley/aws-iot-device-sdk-js
+npm install https://github.com/aws/aws-iot-device-sdk-js
 ```
 
-Note: Two failures for optional dependencies occured, however, it appears these can be ignored for now. Watch [this issue](https://github.com/aws/aws-iot-device-sdk-js/issues/4) for updates:
 
-```
-...
-npm WARN optional dep failed, continuing utf-8-validate@1.1.0
-npm WARN optional dep failed, continuing bufferutil@1.1.0
-...
-```
 ### IoT Platform Setup
 In the console, created a "Thing" called "pi_2".
+
 ![](./readme_images/create_thing_1.png)
 
 Then on that thing's detail view, "Connect a Device"
+
 ![](./readme_images/create_thing_2.png)
 
 Choose "NodeJS" and click "Generate Certificate & Policy". This will create a keypair, as well as add a policy to the pi_2 thing.
